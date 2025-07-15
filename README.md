@@ -50,3 +50,18 @@ print(sumnum(1,2,3,4,5,6,7,8,9,10))
 7
 55
 
+
+
+
+'''Keyword args **kwargs  '''
+def info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}:{value}")
+info(name='Jyothika', age=19,cgpa=8.5)
+
+
+==========OUTPUT============
+name:Jyothika
+age:19
+cgpa:8.5
+
