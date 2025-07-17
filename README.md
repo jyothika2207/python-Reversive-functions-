@@ -119,5 +119,23 @@ else:
     enter a number: 4
       4 is even
 
-Click to add a cell.
 
+
+def A(n):
+    print("Jyothika",n)
+    B(n-1)
+def B(n):
+    if n<=0:
+        return
+    print("Koliki",n)
+    A(n-1)
+num=int(input("enter a number:"))
+A(num)
+
+=========OUTPUT===============
+enter a number: 4
+Jyothika 4
+Koliki 3
+Jyothika 2
+Koliki 1
+Jyothika 0
