@@ -83,7 +83,7 @@ for i in range(num):
 
 
 
-# sum of digits using recursion
+# sum of digits using indirect recursion
   def dsum(n):
     if n==0:
         return 0
