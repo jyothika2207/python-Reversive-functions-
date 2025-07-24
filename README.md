@@ -139,3 +139,22 @@ Koliki 3
 Jyothika 2
 Koliki 1
 Jyothika 0
+
+
+
+
+# fib on tree recursions 0 1 1 2 3 5 8
+def fib(n):
+    if n<=1:
+        return n
+    return fib(n-1)+fib(n-2)
+terms=int(input("Enter number of terms to print:"))
+print(("fibanacci series....."))
+for i in range(terms):
+    print(fib(i), end=' ')
+
+    ======OUTPUT=========
+    Enter number of terms to print: 8
+    fibanacci series.....
+     0 1 1 2 3 5 8 13 
+
