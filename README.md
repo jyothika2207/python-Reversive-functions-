@@ -208,3 +208,21 @@ Binary combinations..........
  110
  111
 
+
+
+# '''tail recursion'''
+def head(n):
+    if n==0:
+        return
+    print(n)
+    head (n-1)
+num=int(input("Enter a number:"))
+head(num)
+
+======OUTPUT=======
+Enter a number: 5
+5
+4
+3
+2
+1
