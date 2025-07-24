@@ -226,3 +226,43 @@ Enter a number: 5
 3
 2
 1
+
+
+
+
+# '''head recursion'''
+def sumhead(n):
+    if n==0:
+        return 0
+    return n+sumhead(n-1)
+num=int(input("enter the number:"))
+print("Sum:",sumhead(num))
+
+=======OUTPUT============
+enter the number: 5
+Sum: 15
+
+
+
+
+
+
+
+
+# '''tailrecursion'''
+def sumtail(n,temp=0):
+    if n==0:
+        return temp
+    return sumtail(n-1,temp+n)
+num=int(input("enter the number:"))
+print("Sum:",sumtail(num))
+
+====OUTPUT=======
+enter the number: 7
+Sum: 28
+
+
+        
+
+
+        
