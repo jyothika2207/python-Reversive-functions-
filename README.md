@@ -158,3 +158,26 @@ for i in range(terms):
     fibanacci series.....
      0 1 1 2 3 5 8 13 
 
+
+
+# '''permuatations of characters in tree recursions'''
+def permute(s,bucket=' '):
+    if not s:
+        print(bucket)
+        return
+    for i in range(len(s)):
+        ns=s[:i]+s[i+1:]
+        permute(ns,bucket+s[i])
+text=input("Enter a name/word:")
+print("possibilities of combinations....")
+permute(text)
+
+======OUTPUT============
+Enter a name/word: abc
+possibilities of combinations....
+ abc
+ acb
+ bac
+ bca
+ cab
+ cba
