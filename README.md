@@ -181,3 +181,30 @@ possibilities of combinations....
  bca
  cab
  cba
+
+
+
+# program for binary combinations
+ def binary(n, b=' '):
+    if n==0:
+        print (b)
+        return
+    binary(n-1, b+'0')
+    binary (n-1, b+'1')
+length=int(input("enter length of string:"))
+print("Binary combinations..........")
+binary(length)
+
+
+====OUTPUT============
+enter length of string: 3
+Binary combinations..........
+ 000
+ 001
+ 010
+ 011
+ 100
+ 101
+ 110
+ 111
+
